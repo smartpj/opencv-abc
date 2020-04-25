@@ -1,0 +1,11 @@
+{
+    "language" : "ja",	
+    "plugins": [
+        "copy-code-button",
+        "back-to-top-button",
+	"chapter-fold",
+	"todo",
+	"splitter",
+	"-lunr", "-search", "search-pro"
+]
+}
