@@ -1,3 +1,5 @@
+> `04/25更新 -OpenCV,画像認識、DeepLeaningなど概念整理 ` 
+
 ## OpenCV学ぶ
 
 特徴量マッチングは、 基本的な方法とそれの高速版があるという流れ。 基本的な方法は、OpenCVでAPIになっています。
@@ -94,7 +96,7 @@ deep的含义是人们现在已经训练和掌握了层数更多的网络模型�
 
 ![image-20200425231501189](/Users/leo/Dropbox/note/gitbook/OpenCV-ABC/img/image-20200425231501189.png)
 
-![image-20200425231600154](/Users/leo/Dropbox/note/gitbook/OpenCV-ABC/img/image-20200425231600154.png)****
+![image-20200425231600154](/Users/leo/Dropbox/note/gitbook/OpenCV-ABC/img/image-20200425231600154.png)
 
 
 
@@ -109,4 +111,8 @@ OpenCV 4计算机视觉项目实战（原书第2版）
 [画像処理100本ノック](https://github.com/gzr2017/ImageProcessing100Wen)
 
 [OpenCV-Python图像处理教程](https://github.com/ex2tron/OpenCV-Python-Tutorial)
+
+视觉SLAM14讲
+
+> 《视觉SLAM十四讲：从理论到实践》系统介绍了视觉SLAM（同时定位与地图构建）所需的基本知识与核心算法，既包括数学理论基础，如三维空间的刚体运动、非线性优化，又包括计算机视觉的算法实现，例如多视图几何、回环检测等。此外，还提供了大量的实例代码供读者学习研究，从而更深入地掌握这些内容。
 

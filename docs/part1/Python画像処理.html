@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>4月23日 · GitBook</title>
+        <title>Python画像処理 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../part2/" />
+    <link rel="next" href="./" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="OpenCV概念.html" />
     
 
     </head>
@@ -119,6 +119,64 @@
                 <a href="./">
             
                     
+                    画像認識概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="画像認識とは.html">
+            
+                <a href="画像認識とは.html">
+            
+                    
+                    画像認識とは
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="OpenCV概念.html">
+            
+                <a href="OpenCV概念.html">
+            
+                    
+                    OpenCV概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="Python画像処理.html">
+            
+                <a href="Python画像処理.html">
+            
+                    
+                    Python画像処理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
                     Python画像処理
             
                 </a>
@@ -128,9 +186,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="0423.html">
+        <li class="chapter " data-level="1.3.1" data-path="0423.md">
             
-                <a href="0423.html">
+                <span>
             
                     
                     4月23日
@@ -146,44 +204,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../part2/">
+        <li class="chapter " data-level="1.4" data-path="../part2/">
             
                 <a href="../part2/">
             
                     
                     特徴量抽出
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" >
-            
-                <span>
-            
-                    
-                    xx
-            
-                </span>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="../part3/README.md">
-            
-                <span>
-            
-                    
-                    物体認識
             
                 </a>
             
@@ -210,7 +236,39 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../part4/README.md">
+        <li class="chapter " data-level="1.5" data-path="../part3/README.md">
+            
+                <span>
+            
+                    
+                    物体認識
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    xx
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../part4/README.md">
             
                 <span>
             
@@ -224,7 +282,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" >
+        <li class="chapter " data-level="1.6.1" >
             
                 <span>
             
@@ -272,7 +330,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >4月23日</a>
+        <a href=".." >Python画像処理</a>
     </h1>
 </div>
 
@@ -288,67 +346,6 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="python&#x753B;&#x50CF;&#x51E6;&#x7406;-&#x2460;">Python&#x753B;&#x50CF;&#x51E6;&#x7406; &#x2460;</h1>
-<p><a href="https://qiita.com/gollowars/items/fb664c66f9a69e8c5cac" target="_blank">https://qiita.com/gollowars/items/fb664c66f9a69e8c5cac</a></p>
-<ul>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> </li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x74B0;&#x5883;&#x3065;&#x304F;&#x308A; 
-</li>
-</ul>
-<!-- docker hub Jupyter -->
-<pre><code class="lang-bash">docker ps
-</code></pre>
-<pre><code class="lang-bash">docker onexec -it c8eb0a31<span class="hljs-built_in">cd</span>2b /bin/bash
-</code></pre>
-<pre><code class="lang-bash">pip install opencv-python
-</code></pre>
-<pre><code class="lang-shell">pip install opencv-contrib-python
-</code></pre>
-<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
-<span class="hljs-keyword">import</span> cv2
-
-r = <span class="hljs-number">0</span>
-g = <span class="hljs-number">0</span>
-b = <span class="hljs-number">255</span>
-
-width = <span class="hljs-number">480</span>
-height = <span class="hljs-number">360</span>
-pixel = np.array([b,g,r],np.uint8)
-wGrid = np.array([pixel]*width,np.uint8)
-newImg = np.array([wGrid]*height,np.uint8)
-
-cv2.imshow(<span class="hljs-string">&apos;generate img&apos;</span>,newImg)
-cv2.imwrite(<span class="hljs-string">&apos;createimg.png&apos;</span>,newImg)
-cv2.waitKey(<span class="hljs-number">0</span>)
-</code></pre>
-<p>import numpy as np
-import cv2</p>
-<p>r = 0
-g = 0
-b = 255</p>
-<p>width = 480
-height = 360
-pixel = np.array([b,g,r],np.uint8)
-wGrid = np.array([pixel]<em>width,np.uint8)
-newImg = np.array([wGrid]</em>height,np.uint8)</p>
-<p>cv2.imshow(&apos;generate img&apos;,newImg)
-cv2.imwrite(&apos;createimg.png&apos;,newImg)
-cv2.waitKey(0)`</p>
-<ul>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x753B;&#x50CF;&#x751F;&#x6210;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x753B;&#x50CF;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x753B;&#x50CF;&#x306E;&#x8272;&#x306E;&#x5E73;&#x5747;&#x5024;&#x51FA;&#x3059;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x753B;&#x7D20;&#x3092;&#x3044;&#x3058;&#x308B;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x30C8;&#x30EA;&#x30DF;&#x30F3;&#x30B0;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x30EA;&#x30B5;&#x30A4;&#x30BA;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x52A0;&#x7B97;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x30A2;&#x30D5;&#x30A3;&#x30F3;&#x5909;&#x63DB;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x53CD;&#x8EE2;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x30B0;&#x30EC;&#x30FC;&#x30B9;&#x30B1;&#x30FC;&#x30EB;&#x5909;&#x63DB;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x63CF;&#x753B;&#x95A2;&#x6570;&#x306E;Circle&#x3092;&#x4F7F;&#x3046;&#x3002;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x8272;&#x306E;&#x62BD;&#x51FA;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> &#x30AB;&#x30E9;&#x30FC;&#x30C1;&#x30A7;&#x30F3;&#x30CD;&#x30EB;&#x5165;&#x308C;&#x66FF;&#x3048;</li>
-<li style="list-style: none"><input type="checkbox" disabled="disabled"> alpha&#x30C1;&#x30E3;&#x30F3;&#x30CD;&#x30EB;&#x306E;&#x64CD;&#x4F5C; &#x203B;&#x9014;&#x4E2D;</li>
-</ul>
 
                                 
                                 </section>
@@ -376,12 +373,12 @@ cv2.waitKey(0)`</p>
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Python画像処理">
+                <a href="OpenCV概念.html" class="navigation navigation-prev " aria-label="Previous page: OpenCV概念">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../part2/" class="navigation navigation-next " aria-label="Next page: 特徴量抽出">
+                <a href="./" class="navigation navigation-next " aria-label="Next page: Python画像処理">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -392,7 +389,7 @@ cv2.waitKey(0)`</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4月23日","level":"1.2.1","depth":2,"next":{"title":"特徴量抽出","level":"1.3","depth":1,"path":"part2/README.md","ref":"part2/README.md","articles":[{"title":"xx","level":"1.3.1","depth":2,"ref":"","articles":[]}]},"previous":{"title":"Python画像処理","level":"1.2","depth":1,"path":"part1/README.md","ref":"part1/README.md","articles":[{"title":"4月23日","level":"1.2.1","depth":2,"path":"part1/0423.md","ref":"part1/0423.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["copy-code-button","back-to-top-button","chapter-fold","todo","splitter","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"todo":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"part1/0423.md","mtime":"2020-04-24T14:23:28.643Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-25T14:42:18.968Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python画像処理","level":"1.2.3","depth":2,"next":{"title":"Python画像処理","level":"1.3","depth":1,"path":"part1/README.md","ref":"part1/README.md","articles":[{"title":"4月23日","level":"1.3.1","depth":2,"path":"part1/0423.md","ref":"part1/0423.md","articles":[]}]},"previous":{"title":"OpenCV概念","level":"1.2.2","depth":2,"path":"part1/OpenCV概念.md","ref":"part1/OpenCV概念.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","back-to-top-button","chapter-fold","todo","splitter","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"todo":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"part1/Python画像処理.md","mtime":"2020-04-27T08:15:10.292Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-29T13:50:33.006Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
