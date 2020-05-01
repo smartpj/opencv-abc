@@ -1,5 +1,11 @@
 # Python画像処理
 
+
+
+
+
+日本語：２０１６まで
+
 https://qiita.com/gollowars/items/fb664c66f9a69e8c5cac
 
 http://ytbilly3636.hateblo.jp/entry/2017/03/26/102041

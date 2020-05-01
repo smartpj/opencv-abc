@@ -62,3 +62,4 @@ OpenCV是一个跨平台的库，使用它我们可以开发实时的计算机�
 - Highgui
 
   这是一个易于使用的界面，具有简单的UI功能。 在OpenCV的Java库中，这个模块的功能包含在两个不同的包中，即`org.opencv.imgcodecs`和`org.opencv.videoio`。
+
